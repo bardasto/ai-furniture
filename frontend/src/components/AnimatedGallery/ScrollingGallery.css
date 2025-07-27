@@ -1,0 +1,14 @@
+/* src/components/ScrollingGallery/ScrollingGallery.css */
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%); /* Прокручиваем ровно на половину высоты, так как мы дублируем массив */
+  }
+}
+
+.scrolling-column {
+  animation: scroll-up linear infinite;
+}
